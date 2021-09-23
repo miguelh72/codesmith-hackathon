@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 60px;
 }
 
 #config .form:first-of-type {
@@ -33,8 +34,4 @@
   width: calc(100% - 12px);
   font-size: 18px;
   padding: 4px;
-}
-
-#config #settings img {
-  filter: none;
 }
