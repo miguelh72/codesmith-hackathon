@@ -1,13 +1,15 @@
 {
   "manifest_version": 3,
 
-  "name": "My Extension",
-  "description": "This extension is a starting point to create a real Chrome extension",
+  "name": "CodeSmith Wizard",
+  "description": "Cast a spell to your pair-programming Zoom room!",
   "version": "0.0.1",
 
   "icons": {
-    "192": "logo192.png",
-    "512": "logo512.png"
+    "16": "logo16.png",
+    "32": "logo32.png",
+    "48": "logo48.png",
+    "128": "logo128.png"
   },
 
   "permissions": ["storage"],
