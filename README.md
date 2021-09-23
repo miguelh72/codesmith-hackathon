@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# Codesmith Wizard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Google chrome extension that magically knows which Zoom room you are supposed to be in. With a single button click, join your classmates or pair programming partner!
 
-## Available Scripts
 
-In the project directory, you can run:
+## Ideation
 
-### `npm start`
+Please see [whiteboard](https://excalidraw.com/#room=cc4452a38e19f8fc55c1,GjVzMaSKfVWgsb7c0NG6Lg).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## MVP
+* Zoom room with most recent mention of your name in slack #general
+* Single button to redirect to last assigned zoom room
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Stretch Features
+* Keep a history with easy way to navigate through it
+* Sync with calendar to also tell us zoom room for classes and if we have an upcoming class
+    * notification with single click button to join
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## TODO
+* [] Render basic page with a single button when you click the extension icon.
+    * [] on first launch ask for name to match for user
+    * [] if no data is available ask user to open #general for the extension to parse
+* [] Inject page when on slack domain
+    * [] page should check if we are in #general room and parse through any matches of the user's name and associated link
+* [] Have an options page where user can change their name
+    * [] optionally add list of users to specifically look for mentions, default is to search through all mentions
