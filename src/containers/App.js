@@ -112,6 +112,7 @@ function App(props) {
       lastPPLink={lastPPLink}
       setShowConfig={setShowConfig}
       openConfig={openConfig}
+      slackOrg={slackOrg}
     />;
 }
 
