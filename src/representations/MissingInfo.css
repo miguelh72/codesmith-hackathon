@@ -1,0 +1,17 @@
+#missinginfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#missinginfo p {
+  font-size: 22px;
+}
+
+#missinginfo main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 110px;
+  margin-top: 50px;
+}

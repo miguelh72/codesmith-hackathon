@@ -1,0 +1,40 @@
+#config {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#config .form:first-of-type {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  height: 230px;
+}
+
+#config .form:nth-of-type(2){
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  height: 165px;
+}
+
+#config .form h3 {
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+#config .form input {
+  width: calc(100% - 12px);
+  font-size: 18px;
+  padding: 4px;
+}
+
+#config #settings img {
+  filter: none;
+}

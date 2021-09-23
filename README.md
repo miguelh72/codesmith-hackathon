@@ -15,6 +15,7 @@ Please see [whiteboard](https://excalidraw.com/#room=cc4452a38e19f8fc55c1,GjVzMa
 * Keep a history with easy way to navigate through it
 * Sync with calendar to also tell us zoom room for classes and if we have an upcoming class
     * notification with single click button to join
+* Have multiple cohort selection
 
 ## TODO
 * [] Render basic page with a single button when you click the extension icon.
@@ -25,3 +26,4 @@ Please see [whiteboard](https://excalidraw.com/#room=cc4452a38e19f8fc55c1,GjVzMa
     * [] page should check if we are in #general room and parse through any matches of the user's name and associated link
 * [] Have an options page where user can change their name
     * [] optionally add list of users to specifically look for mentions, default is to search through all mentions
+* Notify user if last URL is older than 2 days

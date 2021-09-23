@@ -14,7 +14,7 @@ chrome.storage.sync.get(['name'], (result) => {
       const post = posts[i];
 
       // find first post to mention the user's name
-      const nameMatcher = new RegExp(name + '[^<]*(\<a[^>]*href=\"(.*?)\"[^>]*\>)', 'i');
+      const nameMatcher = new RegExp(`${name[0]}[^<]*${name[1]}[^<]*(<a[^>]*href="(.*?)"[^>]*>)`, 'i');
       const matchResult = post.innerHTML.match(nameMatcher); // index 2 is href
 
       if (matchResult && typeof matchResult[2] === 'string') {

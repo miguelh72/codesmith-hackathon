@@ -58,7 +58,14 @@ function DefaultPopup(props) {
         {name
           ? <>
             <h2>Hi, {name}!</h2>
-            {lastPPLink && <a href={lastPPLink} target="_blank" rel="noreferrer">Join Room!</a>}
+            {lastPPLink
+              ? <a href={lastPPLink} target="_blank" rel="noreferrer">Join Room!</a>
+              : <>
+                <h3>Open Slack #general</h3>
+                <p>App will need to look at your #general to find your latest zoom room.
+                  Please click <a href={`https://${defaultSlackOrg}/messages/general`} target="_blank" rel="noreferrer">this link</a> and open your cohort's #general chanel.</p>
+              </>
+            }
           </>
           : <>
             <h2>Welcome to CodeSmith Wizard!</h2>

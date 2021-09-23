@@ -1,0 +1,17 @@
+#teleport {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#teleport p {
+  font-size: 22px;
+}
+
+#teleport main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 110px;
+  margin-top: 30px;
+}
