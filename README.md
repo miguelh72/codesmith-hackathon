@@ -18,12 +18,12 @@ Please see [whiteboard](https://excalidraw.com/#room=cc4452a38e19f8fc55c1,GjVzMa
 * Have multiple cohort selection
 
 ## TODO
-* [] Render basic page with a single button when you click the extension icon.
+* [x] Render basic page with a single button when you click the extension icon.
     * [x] on first launch ask for name to match for user
     * [x] save user name to chrome extension storage
     * [] if no data is available ask user to open #general for the extension to parse
-* [] Inject page when on slack domain
-    * [] page should check if we are in #general room and parse through any matches of the user's name and associated link
-* [] Have an options page where user can change their name
+* [x] Inject page when on slack domain
+    * [x] page should check if we are in #general room and parse through any matches of the user's name and associated link
+* [x] Have an options page where user can change their name
     * [] optionally add list of users to specifically look for mentions, default is to search through all mentions
 * Notify user if last URL is older than 2 days
