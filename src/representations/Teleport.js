@@ -9,7 +9,7 @@ export default function Teleport(props) {
       </header>
       <main>
         <p className='light'>Spell is ready to cast!</p>
-        <a className='btn' href={props.lastPPLink} target="_blank" rel="noreferrer">🗲 Teleport 🗲</a>
+        <a className='btn' href={props.lastPPLink} target="_blank" rel="noreferrer"><img className='lightning-icon' src="lightning.png" alt="lightning icon" /> Teleport <img className='lightning-icon' src="lightning.png" alt="lightning icon" /></a>
       </main>
       <div id='settings' onClick={props.openConfig}><img src="settings.png" alt="settings" /></div>
     </div>
