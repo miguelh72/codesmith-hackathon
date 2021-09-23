@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 
 import './index.css';
 
-import App from './App';
+import DefaultPopup from './containers/DefaultPopup';
 
 ReactDOM.render(
-  <App />,
+  <DefaultPopup />,
   document.getElementById('root')
 );

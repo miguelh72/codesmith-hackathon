@@ -14,5 +14,12 @@
   
   "action": {
     "default_popup": "index.html"
-  }
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://app.slack.com/client/*"],
+      "js": ["scraper.js"]
+    }
+  ]
 }

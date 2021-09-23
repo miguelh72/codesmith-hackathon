@@ -18,7 +18,8 @@ Please see [whiteboard](https://excalidraw.com/#room=cc4452a38e19f8fc55c1,GjVzMa
 
 ## TODO
 * [] Render basic page with a single button when you click the extension icon.
-    * [] on first launch ask for name to match for user
+    * [x] on first launch ask for name to match for user
+    * [x] save user name to chrome extension storage
     * [] if no data is available ask user to open #general for the extension to parse
 * [] Inject page when on slack domain
     * [] page should check if we are in #general room and parse through any matches of the user's name and associated link
