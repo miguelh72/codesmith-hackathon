@@ -20,6 +20,7 @@ chrome.storage.sync.get(['name'], (result) => {
       if (matchResult && typeof matchResult[2] === 'string') {
         const link = matchResult[2];
         // TODO add regex to confirm link is valid
+        if (!link.match(/https*:\/\//i)) continue;
 
         // update local storage with latest link
         chrome.storage.sync.set({ lastPPLink: link }, () => {
