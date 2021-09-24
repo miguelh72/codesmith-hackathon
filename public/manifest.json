@@ -1,23 +1,18 @@
 {
   "manifest_version": 3,
-
   "name": "CodeSmith Wizard",
   "description": "Cast a spell to your pair-programming Zoom room!",
-  "version": "0.0.1",
-
+  "version": "0.1.0",
   "icons": {
     "16": "logo16.png",
     "32": "logo32.png",
     "48": "logo48.png",
     "128": "logo128.png"
   },
-
   "permissions": ["storage"],
-  
   "action": {
     "default_popup": "index.html"
   },
-
   "content_scripts": [
     {
       "matches": ["https://app.slack.com/client/*"],

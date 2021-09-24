@@ -8,24 +8,29 @@ import MissingInfo from './../representations/MissingInfo';
 import Teleport from './../representations/Teleport';
 import Config from './../representations/Config';
 
+const DEFAULT_SLACK_ORG = 'codesmithremo-0tu5630.slack.com';
+
 function App(props) {
   /* State */
 
-  const [name, setName] = useState(undefined); // [first, last]
+  const [name, setName] = useState(undefined);
+
   const [lastPPLink, setLastPPLink] = useState(undefined);
-  const [nameFormValues, setNameFormValues] = useState(['', '']);
-  const [showConfig, setShowConfig] = useState(false);
-  const [slackOrg, setSlackOrg] = useState('codesmithremo-0tu5630.slack.com');
+  const [nameFormValues, setNameFormValues] = useState(['', '']); // [first, last]
+
+  const [slackOrg, setSlackOrg] = useState(DEFAULT_SLACK_ORG);
   const [slackOrgFormValue, setSlackOrgFormValue] = useState(slackOrg);
+
+  const [showConfig, setShowConfig] = useState(false);
 
   /* Effect hooks */
 
   useEffect(() => {
     chrome.storage.sync.get(['name', 'lastPPLink', 'slackOrg'], function (result) {
-      setName(result.name[0]);
-      setNameFormValues(result.name);
-      setLastPPLink(result.lastPPLink);
-      setSlackOrg(result.slackOrg || 'codesmithremo-0tu5630.slack.com');
+      if (result.name) setName(result.name[0]);
+      if (result.name) setNameFormValues(result.name);
+      if (result.lastPPLink) setLastPPLink(result.lastPPLink);
+      if (result.slackOrg && result.slackOrg !== DEFAULT_SLACK_ORG) setSlackOrg(result.slackOrg);
     });
   }, []);
 
@@ -64,7 +69,7 @@ function App(props) {
       setSlackOrg(slackOrgFormValue);
       // Store name to chrome storage
       chrome.storage.sync.set({ slackOrg: slackOrgFormValue }, () => {
-        console.log('slackOrg is set to ' + slackOrgFormValue.join(' ') + 'in local storage'); // TODO remove
+        console.log('CODESMITH WIZARD: slackOrg is set to ' + slackOrgFormValue.join(' ') + 'in local storage'); // TODO remove
       });
     }, [slackOrgFormValue]
   )
