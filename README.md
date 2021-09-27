@@ -25,7 +25,7 @@ Please see [whiteboard](https://excalidraw.com/#room=cc4452a38e19f8fc55c1,GjVzMa
 * [x] Inject page when on slack domain
     * [x] page should check if we are in #general room and parse through any matches of the user's name and associated link
 * [x] Have an options page where user can change their name
-    * [] optionally add list of users to specifically look for mentions, default is to search through all mentions
+    * [ ] optionally add list of users to specifically look for mentions, default is to search through all mentions
 * [ ] Add dropdown with currently active cohorts for user to choose when registering.
 * [ ] Notify user if last URL is older than 2 days, ask them to open Slack again
 * [ ] Refactor units of functionality into testable files. Create tests of all features and views. Mock Google chrome storage API.
