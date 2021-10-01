@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "CodeSmith Wizard",
   "description": "Cast a spell to your pair-programming Zoom room!",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "icons": {
     "16": "logo16.png",
     "32": "logo32.png",
